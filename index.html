@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function fancyScroll() {
+            document.getElementById("faq-card").scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </head>
 
 <body>
@@ -15,7 +20,8 @@
     <a href="https://hackclub.com/"><img
             style="position: absolute; top: 0; left: 10px; border: 0; height:100px; z-index: 999;"
             src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club" class="flag" /></a>
-    <button class="btn" id="dsk" style="position: absolute;right:10px;top:10px">Join Now!</button>
+    <button class="btn" id="dsk" style="position: absolute;right:10px;top:10px" onclick="fancyScroll()">Join
+        Now!</button>
     <div style="width: 100%; background-color: var(--darkless); padding-top: 4%;">
         <div style="width: 100%; display: flex; justify-content: center; margin-top: 5%;">
             <h1 class="welcometo">
@@ -32,7 +38,7 @@
                 <span style="color: var(--red);">Runshaw students</span> programming, building cool projects and
                 <span style="color: var(--red);">learning together</span>
             </p>
-            <button class="btn" id="mob">Join Now!</button>
+            <button class="btn" id="mob" onclick="fancyScroll()">Join Now!</button>
         </div>
     </div>
 
@@ -62,7 +68,7 @@
         <h2 class="eyebrow">tell me more!</h2>
         <h1 class="content-title">FAQs</h1>
         <div style="height: 22px;"></div>
-        <div class="card sunken">
+        <div class="card sunken" id="faq-card">
             <div class="fancy-faq-container">
                 <h3 class="faq-title">Where?</h3>
                 <p class="text-content">Patterdale, room <a
