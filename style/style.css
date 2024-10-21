@@ -22,19 +22,18 @@ ul {
 .banner {
     position: absolute;
     top: -10px;
-    left: var(--spacing-4);
+    left: 10px;
+    border: 0;
+    height: 100px;
+    z-index: 999;
 }
 
-.banner img {
-    height: 80px;
-}
-
-.banner:hover img {
+.banner:hover {
     animation: wave-flag 0.5s linear infinite alternate;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .banner:hover img {
+    .banner:hover {
         transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) transform;
         transform-origin: top left;
     }
@@ -54,15 +53,6 @@ ul {
     font-size: var(--font-3);
 }
 
-.blurb {
-    border-radius: var(--radii-default);
-    padding: var(--spacing-4);
-}
-
-.blurb p {
-    line-height: 1.75;
-}
-
 header>p,
 header>p>a {
     color: var(--white) !important;
@@ -70,40 +60,6 @@ header>p>a {
 
 .container {
     margin: var(--spacing-5) auto;
-}
-
-.no-repos {
-    color: var(--white);
-    font-style: italic;
-}
-
-.repos {
-    background: radial-gradient(#e66465, #9198e5);
-    padding: var(--spacing-4) 0;
-}
-
-.repos h2 {
-    margin-bottom: var(--spacing-4);
-}
-
-.repos ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-3);
-}
-
-@media (max-width: 768px) {
-    .repos ul {
-        grid-template-columns: 1fr;
-    }
-}
-
-.repo {
-    margin: 0;
-}
-
-.repo .description {
-    min-height: 50px;
 }
 
 .issues-count,
@@ -166,67 +122,12 @@ header>p>a {
     background-color: var(--cyan);
 }
 
-@media screen and (max-width: 768px) {
-    .involveBig ol {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .involveBig ol {
-        grid-template-columns: 1fr;
-    }
-}
-
 .card-design {
     position: absolute;
     bottom: -30px;
     right: -5px;
     opacity: 20%;
     font-size: 60px;
-}
-
-.involve {
-    color: var(--white);
-}
-
-.involve h3 {
-    font-size: var(--font-5);
-}
-
-.involve p {
-    font-size: var(--font-3);
-    color: var(--white);
-}
-
-.involve a {
-    font-size: var(--font-4);
-    color: var(--white);
-}
-
-.involve img {
-    height: 40%;
-    position: absolute;
-    bottom: -5%;
-    right: -5%;
-    opacity: 20%;
-}
-
-.dino-svg {
-    opacity: 50% !important;
-}
-
-.loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid var(--slate);
-    border-bottom-color: var(--red);
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    align-self: center;
-    margin: var(--spacing-3);
 }
 
 @keyframes rotation {
@@ -303,11 +204,6 @@ main {
     }
 }
 
-@media (max-width: 740px) {
-    .flag {
-        display: none;
-    }
-}
 
 @media (min-width: 740px) {
     .welcometo {
@@ -408,6 +304,39 @@ main {
     margin-bottom: 16px;
 }
 
+.btn-smol {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    appearance: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--theme-ui-colors-white, #ffffff);
+    background-color: var(--theme-ui-colors-primary, #ec3750);
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 99999px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
+    letter-spacing: 0.009em;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform .125s ease-in-out, box-shadow .125s ease-in-out;
+    font-size: 24px;
+    line-height: 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
 footer {
     width: 100%;
     background-color: var(--darkless);
@@ -453,4 +382,21 @@ footer-links h4 {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+    .index-hero {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 740px) {
+    .index-hero {
+        padding-top: 1px;
+    }
+}
+
+.index-hero {
+    width: 100%;
+    background-color: var(--darkless);
 }
