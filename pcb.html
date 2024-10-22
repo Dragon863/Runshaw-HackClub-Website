@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/onboard.css">
     <script>
+        // Redirect to secure if necessary
+        if (location.protocol !== "https:") {
+            location.protocol = "https:";
+        }
         function fancyScroll() {
             document.getElementById("faqEyebrow").scrollIntoView({ behavior: "smooth" });
         }
