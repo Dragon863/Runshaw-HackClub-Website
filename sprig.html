@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprig - Runshaw Hack Club</title>
+    <link rel="icon" href="/favicons/sprig.png">
+    <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sprig.css">
+    <script>
+        // Redirect to secure if necessary
+        if (location.protocol !== "https:") {
+            location.protocol = "https:";
+        }
+        function learnHow() {
+            document.getElementById("learn-how").scrollIntoView({ behavior: "smooth" });
+        }
+        function navigateTo(url) {
+            document.location = url;
+        }
+    </script>
+</head>
+
+
+<body>
+    <a href="https://hackclub.com/"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"
+            class="banner" style="filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));" /></a>
+    <a href="/"><button class="btn-smol" style="position: absolute;right:10px;top:10px;z-index: 5;">✖</button></a>
+    <div style="width: 100%; padding-top: 50px;" class="hero" id="hero">
+        <div id="hero-container">
+            <img src="https://sprig.hackclub.com/logo4.png"></img>
+            <img src="/img/sprig.png" style="margin-top: -40px;margin-bottom: -48px;"></img>
+        </div>
+        <h1>Every player is a creator.</h1>
+        <p>
+            Explore 430+ games built by other teenagers,<br>
+            or make your own and we'll send you a console!
+        </p>
+        <div>
+            <button class="sprig-btn active" onclick="learnHow()">
+                Make a game »
+            </button>
+            <a href="https://sprig.hackclub.com/gallery">
+                <button class="sprig-btn active" style="margin-bottom: 48px;">
+                    Play a game »
+                </button>
+            </a>
+        </div>
+    </div>
+    <section style="padding-left: 6px;padding-right: 6px;">
+        <div class="container blurb">
+            <p> Sprig is an open source game console powered by a Raspberry Pi Pico. You write your own game, submit it
+                to the gallery and get one posted to you for free! Funded by <a href="https://hackclub.com/">Hack
+                    Club</a> </p>
+        </div>
+        <div class="container" id="learn-how">
+            <div style="height: 12px;"></div>
+            <h2 class="eyebrow">Learn more</h2>
+            <h1 class="content-title">How do I <span style="color:var(--accent)">get started</span>?</h1>
+            <p class="text-content">Sprig is a project by Hack Club, which means you can take part either as an
+                individual, or as a part of our <a href="/">Runshaw Hack Club</a>. If you're interested in taking part
+                with others or don't know where to start, join us in room <b>P104</b> any Monday at lunch and speak to
+                any of us, and we'll help you get started!</p>
+        </div>
+    </section>
+    <section style="background-color: #2f2f2f;">
+        <div style="height: 8px;"></div>
+        <div class="steps-container container">
+            <h2>What steps should I follow?</h2>
+            <p>Applying for sprig is easy! Any teenager who applies will receive a free unit.</p>
+            <div style="height: 12px;"></div>
+            <div class="steps">
+                <article>
+                    <h3>1</h3>
+                    <p>Make a game in the Sprig engine</p>
+                </article>
+                <div class="arrow">»</div>
+                <article>
+                    <h3>2</h3>
+                    <p>Share it with the community in our gallery</p>
+                </article>
+                <div class="arrow">»</div>
+                <article>
+                    <h3>3</h3>
+                    <p>Check the post for a Sprig device :)</p>
+                </article>
+            </div>
+        </div>
+        <div style="height: 12px;"></div>
+    </section>
+    <section style="background-color: var(--accent-dark);margin: 0;">
+        <div style="height: 8px;"></div>
+        <div class="games-container container">
+            <p class="text-content white">
+                <b>Hack club has built you a game engine that’s accessible to beginners, yet entertaining for
+                    masters.</b> Start
+                building
+                a
+                Sprig game within minutes using integrated sprite, sound, and map editors.
+            </p>
+            <div class="games container">
+                <div style="display: block;" class="game" data-filename="pyre" data-title="pyre" data-author="ced"
+                    data-tags="strategy" onclick="navigateTo(`https://sprig.hackclub.com/gallery/pyre`)">
+                    <div class="sub-game">
+                        <img alt="preview of pyre.js" data-loaded="true" src="/img/pyre.png">
+                        <h3>pyre</h3>
+                        <p class="author">by @ced</p>
+                    </div>
+
+                </div>
+                <div style="display: block;" class="game" data-filename="platform_rogue" data-title="platform_rogue"
+                    data-author="@farreltobias"
+                    onclick="navigateTo(`https://sprig.hackclub.com/gallery/platform_rogue`)">
+                    <div class="sub-game">
+                        <img alt="preview of platform_rogue.js" data-loaded="true" src="/img/platform_rogue.png">
+                        <h3>platform_rogue</h3>
+                        <p class="author">by @farreltobias</p>
+                    </div>
+                </div>
+                <div class="game" href="/gallery/Sprig_Shooter" data-filename="Sprig_Shooter" data-title="Sprig Shooter"
+                    data-author="Heliodex" onclick="navigateTo(`https://sprig.hackclub.com/gallery/Sprig_Shooter`)"
+                    style="display: block;">
+                    <div class="sub-game">
+                        <img alt="preview of Sprig_Shooter.js" data-loaded="true" src="/img/sprig_shooter.png">
+                        <h3>Sprig Shooter</h3>
+                        <p class="author">by @Heliodex</p>
+                    </div>
+                </div>
+                <div class="game" href="/gallery/WrongLane" data-filename="WrongLane" data-title="WrongLane"
+                    data-author="KaspianDev" onclick="navigateTo(`https://sprig.hackclub.com/gallery/WrongLane`)"
+                    style="display: block;">
+                    <div class="sub-game">
+                        <img alt="preview of WrongLane.js" data-loaded="true" src="/img/wronglane.png">
+                        <h3>WrongLane</h3>
+                        <p class="author">by @KaspianDev</p>
+                        <p class="tags"><span class="game-tag">#endless </span><span class="game-tag">#action </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="/gallery"><button class="sprig-btn active">Check out other games »</button></a>
+            </div>
+        </div>
+        <div style="height: 4px;"></div>
+    </section>
+</body>
+<footer>
+    <div>
+        <div class="footer-links">
+            <div>
+                <h4>Runshaw</h4>
+                <a href="https://runshaw.ac.uk">Home</a>
+                <a href="https://digital.runshaw.ac.uk/">Digital</a>
+                <a href="https://studentportal.runshaw.ac.uk/study.aspx?new=1#activity">Aspire</a>
+            </div>
+            <div>
+                <h4>Hack Club</h4>
+                <a href="https://hackclub.com/">Home</a>
+                <a href="https://jams.hackclub.com/">Jams</a>
+                <a href="https://toolbox.hackclub.com/">Toolbox</a>
+            </div>
+            <div>
+                <h4>Tools</h4>
+                <a href="https://github.com/">Github</a>
+                <a href="https://teams.microsoft.com/">Teams</a>
+                <a href="https://www.instagram.com/runshawcollege/">Instagram</a>
+            </div>
+        </div>
+        <p style="color: white; text-align: center;">Made by the Hack Club team at Runshaw, web design by <a
+                style="display:inline" href="https://danieldb.uk/">Daniel Benge</a></p>
+    </div>
+</footer>
+
+</html>
