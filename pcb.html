@@ -1,155 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnBoard - Runshaw Hack Club</title>
-    <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="script/spotlight.js"></script>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/onboard.css">
-    <script>
-        // Redirect to secure if necessary
-        if (location.protocol !== "https:") {
-            location.protocol = "https:";
-        }
-    </script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OnBoard - Runshaw Hack Club</title>
+        <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="script/spotlight.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/onboard.css">
+        <script src="script/secure-conn.js"></script>
+    </head>
 
 
-<body>
-    <a href="https://hackclub.com/"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"
-            class="banner" style="filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));" /></a>
-    <a href="/"><button class="btn-smol" style="position: absolute;right:10px;top:10px;z-index: 5;">✖</button></a>
-    <div style="width: 100%; padding-top: 100px;" class="hero" id="hero">
-        <div id="herobox"
-            style="background: radial-gradient(circle at -100px -100px, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 80px);">
+    <body>
+        <a href="https://hackclub.com/"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"
+                class="banner" style="filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.6));" /></a>
+        <a href="/"><button class="btn-smol" style="position: absolute;right:10px;top:10px;z-index: 5;">✖</button></a>
+        <div style="width: 100%; padding-top: 100px;" class="hero" id="hero">
+            <div id="herobox"
+                style="background: radial-gradient(circle at -100px -100px, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.8) 80px);">
+            </div>
+            <div class="hero-top">
+                <div style="width: 100%; text-align: center;"></div>
+                <h1 style="margin-top: 0; margin-bottom: 0.5em;">
+                    <span class="onboard-hero-text">
+                        &nbsp;OnBoard!</span>
+                </h1>
+                <div style="width: 100%; text-align: center; color: white;" id="bannerText">
+                    <p style="margin-top: 0;" class="subhero">Circuit boards are
+                        <span style="color: var(--green);">magical</span>. You design one,
+                        <span style="color: var(--green);">we'll print it!</span>
+                    </p>
+                </div>
+
+            </div>
         </div>
-        <div class="hero-top">
-            <div style="width: 100%; text-align: center;"></div>
-            <h1 style="margin-top: 0; margin-bottom: 0.5em;">
-                <span class="onboard-hero-text">
-                    &nbsp;OnBoard!</span>
-            </h1>
-            <div style="width: 100%; text-align: center; color: white;" id="bannerText">
-                <p style="margin-top: 0;" class="subhero">Circuit boards are
-                    <span style="color: var(--green);">magical</span>. You design one,
-                    <span style="color: var(--green);">we'll print it!</span>
+        <section style="padding-left: 6px;padding-right: 6px;">
+            <div class="container wide blurb">
+                <p>Join over 1,000 others to create your own circuit board. You can learn how they work, try making one
+                    yourself
+                    and then have your design
+                    manufactured - for free!</p>
+            </div>
+            <div class="container wide">
+                <div style="height: 12px;"></div>
+                <h1 class="content-title">What is a <span style="color:var(--green)">circuit board</span>?</h1>
+                <p class="text-content">A circuit board is like a small, flat board that <b>connects electronic
+                        components</b> so they can work together. It has <b>traces</b> (like tiny roads) made of copper
+                    that
+                    let electricity flow between parts like chips and resistors. It’s the backbone of most
+                    electronic devices - if you own any electronics, they'll have one!</p>
+            </div>
+        </section>
+        <section style="background-color: #151515;">
+            <div class="grid-container container copy">
+                <h2 class="grid-title">What have people made already?</h2>
+                <div class="grid-items">
+                    <div class="grid-box">
+                        <a href="https://github.com/hackclub/OnBoard/tree/main/projects/E-Fidget%20Lite"
+                            target="_blank">
+                            <article class="grid-item">
+                                <p class="description" style="padding-right: 40%;">A <strong>fidget spinner</strong>
+                                    without
+                                    any moving parts.</p>
+                                <p class="details">See Micha's work&nbsp;<span class="arrow">→</span></p>
+                                <img src="https://cloud-r2xrlpq9q-hack-club-bot.vercel.app/0spinner.png"
+                                    alt="A red circular circuit board with a graphic of white fidget spinner on it."
+                                    class="grid-image">
+                            </article>
+                        </a>
+                    </div>
+                    <div class="grid-box">
+                        <a href="https://jams.hackclub.com/batch/usb-hub" target="_blank">
+                            <article class="grid-item">
+                                <p class="description">Hugo's custom-made 4 port <strong>USB-C hub</strong></p>
+                                <p class="details">Build one for your yourself&nbsp;<span class="arrow">→</span></p>
+                                <img src="https://cloud-c953eezuq-hack-club-bot.vercel.app/0hub.png"
+                                    alt="A rectangular circuit board in the shape of a train car that acts as a USB type C hub."
+                                    class="grid-image">
+                            </article>
+                        </a>
+                    </div>
+                    <div class="grid-box">
+                        <a href="https://jams.hackclub.com/batch/sparkletilt-pcb" target="_blank">
+                            <article class="grid-item">
+                                <p class="description">Karmanyaah's <strong>digital level</strong>, SparkleTilt.</p>
+                                <p class="details">Learn how to make your own&nbsp;<span class="arrow">→</span></p>
+                                <img src="https://cloud-myjum5y6g-hack-club-bot.vercel.app/0longhorn2.png"
+                                    alt="A longhorn-shaped PCB with glowing horns." class="grid-image">
+                            </article>
+                        </a>
+                    </div>
+                    <div class="grid-box">
+                        <a href="https://github.com/hackclub/OnBoard/tree/main/projects/TOTKey" target="_blank">
+                            <article class="grid-item">
+                                <p class="description">Build your own <strong>hardware key</strong>.</p>
+                                <p class="details">Learn how to make your own&nbsp;<span class="arrow">→</span></p>
+                                <img src="https://cloud-6a1wip38p-hack-club-bot.vercel.app/1totk_key.png"
+                                    alt="A long PCB with a pixelated screen." class="grid-image">
+                            </article>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container narrow" style="text-align: center;padding-bottom: 12px;">
+                <a href="https://jams.hackclub.com/tag/pcb" target="_blank"><button class="btn">Learn PCB Design
+                        Now!</button></a>
+            </div>
+        </section>
+        <div>
+            <div class="container wide">
+                <h2 class="eyebrow">Learn more</h2>
+                <h1 class="content-title">How can I <span style="color:var(--green)">build my own</span>?</h1>
+                <p class="text-content">Interested in taking part? OnBoard is funded by Hack Club, which means you can
+                    either take part yourself or in our club. If you'd like to take part, feel free to join us in room
+                    <b>P104</b> any Monday lunch where you can get support in taking part or collaborate with others on
+                    a
+                    project.
                 </p>
             </div>
-
         </div>
-    </div>
-    <section style="padding-left: 6px;padding-right: 6px;">
-        <div class="container wide blurb">
-            <p>Join over 1,000 others to create your own circuit board. You can learn how they work, try making one
-                yourself
-                and then have your design
-                manufactured - for free!</p>
-        </div>
-        <div class="container wide">
-            <div style="height: 12px;"></div>
-            <h1 class="content-title">What is a <span style="color:var(--green)">circuit board</span>?</h1>
-            <p class="text-content">A circuit board is like a small, flat board that <b>connects electronic
-                    components</b> so they can work together. It has <b>traces</b> (like tiny roads) made of copper
-                that
-                let electricity flow between parts like chips and resistors. It’s the backbone of most
-                electronic devices - if you own any electronics, they'll have one!</p>
-        </div>
-    </section>
-    <section style="background-color: #151515;">
-        <div class="grid-container container copy">
-            <h2 class="grid-title">What have people made already?</h2>
-            <div class="grid-items">
-                <div class="grid-box">
-                    <a href="https://github.com/hackclub/OnBoard/tree/main/projects/E-Fidget%20Lite" target="_blank">
-                        <article class="grid-item">
-                            <p class="description" style="padding-right: 40%;">A <strong>fidget spinner</strong> without
-                                any moving parts.</p>
-                            <p class="details">See Micha's work&nbsp;<span class="arrow">→</span></p>
-                            <img src="https://cloud-r2xrlpq9q-hack-club-bot.vercel.app/0spinner.png"
-                                alt="A red circular circuit board with a graphic of white fidget spinner on it."
-                                class="grid-image">
-                        </article>
-                    </a>
+    </body>
+    <footer>
+        <div>
+            <div class="footer-links">
+                <div>
+                    <h4>Runshaw</h4>
+                    <a href="https://runshaw.ac.uk">Home</a>
+                    <a href="https://digital.runshaw.ac.uk/">Digital</a>
+                    <a href="https://studentportal.runshaw.ac.uk/study.aspx?new=1#activity">Aspire</a>
                 </div>
-                <div class="grid-box">
-                    <a href="https://jams.hackclub.com/batch/usb-hub" target="_blank">
-                        <article class="grid-item">
-                            <p class="description">Hugo's custom-made 4 port <strong>USB-C hub</strong></p>
-                            <p class="details">Build one for your yourself&nbsp;<span class="arrow">→</span></p>
-                            <img src="https://cloud-c953eezuq-hack-club-bot.vercel.app/0hub.png"
-                                alt="A rectangular circuit board in the shape of a train car that acts as a USB type C hub."
-                                class="grid-image">
-                        </article>
-                    </a>
+                <div>
+                    <h4>Hack Club</h4>
+                    <a href="https://hackclub.com/">Home</a>
+                    <a href="https://jams.hackclub.com/">Jams</a>
+                    <a href="https://toolbox.hackclub.com/">Toolbox</a>
                 </div>
-                <div class="grid-box">
-                    <a href="https://jams.hackclub.com/batch/sparkletilt-pcb" target="_blank">
-                        <article class="grid-item">
-                            <p class="description">Karmanyaah's <strong>digital level</strong>, SparkleTilt.</p>
-                            <p class="details">Learn how to make your own&nbsp;<span class="arrow">→</span></p>
-                            <img src="https://cloud-myjum5y6g-hack-club-bot.vercel.app/0longhorn2.png"
-                                alt="A longhorn-shaped PCB with glowing horns." class="grid-image">
-                        </article>
-                    </a>
-                </div>
-                <div class="grid-box">
-                    <a href="https://github.com/hackclub/OnBoard/tree/main/projects/TOTKey" target="_blank">
-                        <article class="grid-item">
-                            <p class="description">Build your own <strong>hardware key</strong>.</p>
-                            <p class="details">Learn how to make your own&nbsp;<span class="arrow">→</span></p>
-                            <img src="https://cloud-6a1wip38p-hack-club-bot.vercel.app/1totk_key.png"
-                                alt="A long PCB with a pixelated screen." class="grid-image">
-                        </article>
-                    </a>
+                <div>
+                    <h4>Tools</h4>
+                    <a href="https://github.com/">Github</a>
+                    <a href="https://teams.microsoft.com/">Teams</a>
+                    <a href="https://www.instagram.com/runshawcollege/">Instagram</a>
                 </div>
             </div>
+            <p style="color: white; text-align: center;">Made by the Hack Club team at Runshaw, web design by <a
+                    style="display:inline" href="https://danieldb.uk/">Daniel Benge</a></p>
         </div>
-        <div class="container narrow" style="text-align: center;padding-bottom: 12px;">
-            <a href="https://jams.hackclub.com/tag/pcb" target="_blank"><button class="btn">Learn PCB Design
-                    Now!</button></a>
-        </div>
-    </section>
-    <div>
-        <div class="container wide">
-            <h2 class="eyebrow">Learn more</h2>
-            <h1 class="content-title">How can I <span style="color:var(--green)">build my own</span>?</h1>
-            <p class="text-content">Interested in taking part? OnBoard is funded by Hack Club, which means you can
-                either take part yourself or in our club. If you'd like to take part, feel free to join us in room
-                <b>P104</b> any Monday lunch where you can get support in taking part or collaborate with others on a
-                project.
-            </p>
-        </div>
-    </div>
-</body>
-<footer>
-    <div>
-        <div class="footer-links">
-            <div>
-                <h4>Runshaw</h4>
-                <a href="https://runshaw.ac.uk">Home</a>
-                <a href="https://digital.runshaw.ac.uk/">Digital</a>
-                <a href="https://studentportal.runshaw.ac.uk/study.aspx?new=1#activity">Aspire</a>
-            </div>
-            <div>
-                <h4>Hack Club</h4>
-                <a href="https://hackclub.com/">Home</a>
-                <a href="https://jams.hackclub.com/">Jams</a>
-                <a href="https://toolbox.hackclub.com/">Toolbox</a>
-            </div>
-            <div>
-                <h4>Tools</h4>
-                <a href="https://github.com/">Github</a>
-                <a href="https://teams.microsoft.com/">Teams</a>
-                <a href="https://www.instagram.com/runshawcollege/">Instagram</a>
-            </div>
-        </div>
-        <p style="color: white; text-align: center;">Made by the Hack Club team at Runshaw, web design by <a
-                style="display:inline" href="https://danieldb.uk/">Daniel Benge</a></p>
-    </div>
-</footer>
+    </footer>
 
 </html>

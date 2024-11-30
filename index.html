@@ -1,138 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack Club @ Runshaw College</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon.png">
-    <meta property="og:logo" content="https://assets.hackclub.com/icon-rounded.png" size="512x512">
-    <meta property="og:site_name" content="Runshaw Hack Club">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
-    <meta name="description"
-        content="Welcome to Runshaw Hack Club! We are a community of Runshaw students who are passionate about tech and programming, and we build projects together">
-    <meta name="google-site-verification" content="3W2_TrrMCC4tqNoD5EqY16fKVHZft1-xQmjWCJpEvek" />
-    <meta name="msapplication-TileColor" content="#ec3750">
-    <link rel="mask-icon" href="https://assets.hackclub.com/favicons/safari-pinned-tab.svg" color="#ec3750">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://assets.hackclub.com/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://assets.hackclub.com/favicons/favicon-16x16.png">
-    <link rel="manifest" href="https://assets.hackclub.com/favicons/site.webmanifest">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hack Club @ Runshaw College</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon.png">
+        <meta property="og:logo" content="https://assets.hackclub.com/icon-rounded.png" size="512x512">
+        <meta property="og:site_name" content="Runshaw Hack Club">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_GB">
+        <meta name="description"
+            content="Welcome to Runshaw Hack Club! We are a community of Runshaw students who are passionate about tech and programming, and we build projects together">
+        <meta name="google-site-verification" content="3W2_TrrMCC4tqNoD5EqY16fKVHZft1-xQmjWCJpEvek" />
+        <meta name="msapplication-TileColor" content="#ec3750">
+        <link rel="mask-icon" href="https://assets.hackclub.com/favicons/safari-pinned-tab.svg" color="#ec3750">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://assets.hackclub.com/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://assets.hackclub.com/favicons/favicon-16x16.png">
+        <link rel="manifest" href="https://assets.hackclub.com/favicons/site.webmanifest">
 
-    <link rel="stylesheet" href="https://css.hackclub.com/theme.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        // Redirect to secure if necessary
-        if (location.protocol !== "https:") {
-            location.protocol = "https:";
-        }
-        function fancyScroll() {
-            document.getElementById("faqEyebrow").scrollIntoView({ behavior: "smooth" });
-        }
-    </script>
-</head>
+        <link rel="stylesheet" href="https://css.hackclub.com/theme.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="script/secure-conn.js"></script>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            function fancyScroll() {
+                document.getElementById("faqEyebrow").scrollIntoView({ behavior: "smooth" });
+            }
+        </script>
+    </head>
 
-<body>
-    <a href="https://hackclub.com/"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"
-            class="banner" /></a>
-    <button class="btn" id="dsk" style="position: absolute;right:10px;top:10px" onclick="fancyScroll()">Join
-        Now!</button>
-    <div class="index-hero">
-        <div style="width: 100%; display: flex; justify-content: center; margin-top: 5%;">
-            <h1 class="welcometo">
-                Welcome to</h1>
+    <body>
+        <a href="https://hackclub.com/"><img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"
+                class="banner" /></a>
+        <button class="btn" id="dsk" style="position: absolute;right:10px;top:10px" onclick="fancyScroll()">Join
+            Now!</button>
+        <div class="index-hero">
+            <div style="width: 100%; display: flex; justify-content: center; margin-top: 5%;">
+                <h1 class="welcometo">
+                    Welcome to</h1>
+            </div>
+            <div style="width: 100%; text-align: center;">
+                <h1 style="color: white; font-size: 5em; margin-top: 0; margin-bottom: 0.5em;">
+                    <span style="color: white;" class="hackclub-text">Hack&nbsp;Club</span>
+                    <span class="at-runshaw"> @&nbsp;Runshaw!</span>
+                </h1>
+            </div>
+            <div style="width: 100%; text-align: center; color: white;" id="bannerText">
+                <p style="margin-top: 0;" class="subhero">A community of
+                    <span style="color: var(--red);">Runshaw students</span> programming, building cool projects and
+                    <span style="color: var(--red);">learning together</span>
+                </p>
+                <button class="btn" id="mob" onclick="fancyScroll()">Join Now!</button>
+            </div>
         </div>
-        <div style="width: 100%; text-align: center;">
-            <h1 style="color: white; font-size: 5em; margin-top: 0; margin-bottom: 0.5em;">
-                <span style="color: white;" class="hackclub-text">Hack&nbsp;Club</span>
-                <span class="at-runshaw"> @&nbsp;Runshaw!</span>
+
+        <main class="container wide">
+            <div style="height: 12px;"></div>
+            <h2 class="eyebrow">Who are we?</h2>
+            <h1 class="content-title">A club for <span style="color: var(--orange);">any</span> Runshaw student
+                interested in tech!
             </h1>
-        </div>
-        <div style="width: 100%; text-align: center; color: white;" id="bannerText">
-            <p style="margin-top: 0;" class="subhero">A community of
-                <span style="color: var(--red);">Runshaw students</span> programming, building cool projects and
-                <span style="color: var(--red);">learning together</span>
+            <p class="text-content">
+                We are a community of people who are passionate about tech and wish to share it with you. Hack club is a
+                non-profit organisation run by teenagers for teenagers with lots of opportunities to learn something
+                new.
+                <a href="https://hackclub.com/">Check out the main site here!</a>
             </p>
-            <button class="btn" id="mob" onclick="fancyScroll()">Join Now!</button>
+            <div style="height: 22px;"></div>
+            <h2 class="eyebrow">why come along?</h2>
+            <h1 class="content-title">We build <span style="color: var(--orange);">awesome projects</span>, such as:
+            </h1>
+            <p class="text-content">
+                - Video games <a href="/sprig">(Sprig 🡕)</a><br>
+                - Custom circuit boards <a href="/pcb">(OnBoard 🡕)</a><br>
+                - Personal websites<br>
+                - And much more!
+            </p>
+            <div style="height: 22px;"></div>
+            <h2 class="eyebrow" id="faqEyebrow">tell me more!</h2>
+            <h1 class="content-title">FAQs</h1>
+            <div style="height: 22px;"></div>
+            <div class="card sunken" id="faq-card">
+                <div class="fancy-faq-container">
+                    <h3 class="faq-title">Where?</h3>
+                    <p class="text-content">Patterdale, room <a
+                            href="https://studentportal.runshaw.ac.uk/Room.aspx?roomid=JnmMYZgNtyE%3d">P104</a> </p>
+
+                    <h3 class="faq-title">When?</h3>
+                    <p class="text-content">Every Monday at lunchtime (12:30-13:20)</p>
+
+                    <h3 class="faq-title">How do I register?</h3>
+                    <p class="text-content">There's no need to register! Just turn up any Monday at lunch.</p>
+
+                    <h3 class="faq-title">Do I have to be great at coding?</h3>
+                    <p class="text-content">No! We welcome all skill levels, anybody with a passion or interest in tech
+                        belongs here!</p>
+                </div>
+            </div>
+        </main>
+
+    </body>
+    <footer>
+        <div>
+            <div class="footer-links">
+                <div>
+                    <h4>Runshaw</h4>
+                    <a href="https://runshaw.ac.uk">Home</a>
+                    <a href="https://digital.runshaw.ac.uk/">Digital</a>
+                    <a href="https://studentportal.runshaw.ac.uk/study.aspx?new=1#activity">Aspire</a>
+                </div>
+                <div>
+                    <h4>Hack Club</h4>
+                    <a href="https://hackclub.com/">Home</a>
+                    <a href="https://jams.hackclub.com/">Jams</a>
+                    <a href="https://toolbox.hackclub.com/">Toolbox</a>
+                </div>
+                <div>
+                    <h4>Tools</h4>
+                    <a href="https://github.com/">Github</a>
+                    <a href="https://teams.microsoft.com/">Teams</a>
+                    <a href="https://www.instagram.com/runshawcollege/">Instagram</a>
+                </div>
+
+            </div>
+            <p style="color: white; text-align: center;">Made by the Hack Club team at Runshaw, web design by <a
+                    style="display:inline" href="https://danieldb.uk/">Daniel Benge</a></p>
         </div>
-    </div>
-
-    <main class="container wide">
-        <div style="height: 12px;"></div>
-        <h2 class="eyebrow">Who are we?</h2>
-        <h1 class="content-title">A club for <span style="color: var(--orange);">any</span> Runshaw student
-            interested in tech!
-        </h1>
-        <p class="text-content">
-            We are a community of people who are passionate about tech and wish to share it with you. Hack club is a
-            non-profit organisation run by teenagers for teenagers with lots of opportunities to learn something
-            new.
-            <a href="https://hackclub.com/">Check out the main site here!</a>
-        </p>
-        <div style="height: 22px;"></div>
-        <h2 class="eyebrow">why come along?</h2>
-        <h1 class="content-title">We build <span style="color: var(--orange);">awesome projects</span>, such as:
-        </h1>
-        <p class="text-content">
-            - Video games <a href="/sprig">(Sprig 🡕)</a><br>
-            - Custom circuit boards <a href="/pcb">(OnBoard 🡕)</a><br>
-            - Personal websites<br>
-            - And much more!
-        </p>
-        <div style="height: 22px;"></div>
-        <h2 class="eyebrow" id="faqEyebrow">tell me more!</h2>
-        <h1 class="content-title">FAQs</h1>
-        <div style="height: 22px;"></div>
-        <div class="card sunken" id="faq-card">
-            <div class="fancy-faq-container">
-                <h3 class="faq-title">Where?</h3>
-                <p class="text-content">Patterdale, room <a
-                        href="https://studentportal.runshaw.ac.uk/Room.aspx?roomid=JnmMYZgNtyE%3d">P104</a> </p>
-
-                <h3 class="faq-title">When?</h3>
-                <p class="text-content">Every Monday at lunchtime (12:30-13:20)</p>
-
-                <h3 class="faq-title">How do I register?</h3>
-                <p class="text-content">There's no need to register! Just turn up any Monday at lunch.</p>
-
-                <h3 class="faq-title">Do I have to be great at coding?</h3>
-                <p class="text-content">No! We welcome all skill levels, anybody with a passion or interest in tech
-                    belongs here!</p>
-            </div>
-        </div>
-    </main>
-
-</body>
-<footer>
-    <div>
-        <div class="footer-links">
-            <div>
-                <h4>Runshaw</h4>
-                <a href="https://runshaw.ac.uk">Home</a>
-                <a href="https://digital.runshaw.ac.uk/">Digital</a>
-                <a href="https://studentportal.runshaw.ac.uk/study.aspx?new=1#activity">Aspire</a>
-            </div>
-            <div>
-                <h4>Hack Club</h4>
-                <a href="https://hackclub.com/">Home</a>
-                <a href="https://jams.hackclub.com/">Jams</a>
-                <a href="https://toolbox.hackclub.com/">Toolbox</a>
-            </div>
-            <div>
-                <h4>Tools</h4>
-                <a href="https://github.com/">Github</a>
-                <a href="https://teams.microsoft.com/">Teams</a>
-                <a href="https://www.instagram.com/runshawcollege/">Instagram</a>
-            </div>
-
-        </div>
-        <p style="color: white; text-align: center;">Made by the Hack Club team at Runshaw, web design by <a
-                style="display:inline" href="https://danieldb.uk/">Daniel Benge</a></p>
-    </div>
-</footer>
-<script>
-    feather.replace();
-</script>
+    </footer>
+    <script>
+        feather.replace();
+    </script>
 
 </html>
